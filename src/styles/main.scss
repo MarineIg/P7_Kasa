@@ -1,0 +1,35 @@
+// Utils
+@import 'Utils/mixins';
+@import 'Utils/variables';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+
+// Components
+// @import 'components/buttons';
+// @import 'components/header';
+// @import 'components/footer';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Pages
+// @import 'pages/home';
+// @import 'pages/about';
+// @import 'pages/location';
+// @import 'pages/notFound';
+
+
+
+
+body {
+
+  font-family: $font-family-primary;
+}
+
+
+
+
+

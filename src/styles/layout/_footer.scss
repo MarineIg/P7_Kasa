@@ -1,0 +1,21 @@
+.footer {
+    background-color: black;
+    height: 209px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        align-content: center;
+        img {
+            margin: 60px 0 38px 0;
+        }
+        p {
+            color: $color-secondary;
+        }
+    }
+}

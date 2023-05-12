@@ -1,0 +1,26 @@
+.header {
+    max-width: $max-width;
+    height: 68px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__nav {
+        color: $color-primary;
+        height: 34px;
+        font-size: 24px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        &--active {
+            border-bottom: 2px solid;
+        }
+    }
+    ul {
+        display: flex;
+        li {
+            margin: 0 0 0 57px;
+        }
+    }
+  }
+
