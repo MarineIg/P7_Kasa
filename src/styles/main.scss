@@ -1,10 +1,12 @@
 // Utils
-@import 'Utils/mixins';
 @import 'Utils/variables';
+@import 'Utils/mixins';
 
 // Base
 @import 'base/reset';
 @import 'base/typography';
+@import 'base/base';
+
 
 // Components
 // @import 'components/buttons';
@@ -19,17 +21,4 @@
 // @import 'pages/home';
 // @import 'pages/about';
 // @import 'pages/location';
-// @import 'pages/notFound';
-
-
-
-
-body {
-
-  font-family: $font-family-primary;
-}
-
-
-
-
-
+@import 'pages/notFound';
