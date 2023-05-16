@@ -1,21 +1,28 @@
 .footer {
-    background-color: black;
-    height: 209px;
+  background-color: black;
+  height: 209px;
+  padding: 66px 0 29px 0;
+  display: flex;
+  justify-content: center;
+  &__content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    align-content: center;
-    &__container {
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-        align-content: center;
-        img {
-            margin: 60px 0 38px 0;
-        }
-        p {
-            color: $color-secondary;
-        }
+    height: 100%;
+    p {
+      color: $color-secondary;
+      font-size: 1.5rem;
     }
+  }
+}
+@media (max-width: $bp-sm) {
+  .footer {
+    padding: 62px 10px;
+    &__content {
+      p {
+        font-size: 0.75rem;
+      }
+    }
+  }
 }
