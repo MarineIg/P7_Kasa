@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <main>
+      <main className="main">
         <AppRouter />
       </main>
       <Footer />
