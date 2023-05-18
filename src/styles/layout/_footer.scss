@@ -2,13 +2,11 @@
   background-color: black;
   height: 209px;
   padding: 66px 0 29px 0;
-  display: flex;
-  justify-content: center;
   &__content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
     height: 100%;
     p {
       color: $color-secondary;

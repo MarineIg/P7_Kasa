@@ -2,8 +2,8 @@
   color: $color-primary;
   margin: 160px auto;
   display: flex;
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
   &__title {
     font-size: 18rem;
     font-weight: 700;
@@ -15,5 +15,18 @@
   &__link {
     text-decoration: underline;
     font-size: 1.125rem;
+  }
+}
+@media (max-width: $bp-sm) {
+  .notFound {
+    &__title {
+      font-size: 6rem;
+    }
+    &__subtitle {
+      font-size: 1.1rem;
+      span {
+        display: block;
+      }
+    }
   }
 }

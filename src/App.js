@@ -7,10 +7,12 @@ import Footer from "./layout/Footer";
 function App() {
   return (
     <Router>
-      <Header />
-      <main className="main">
-        <AppRouter />
-      </main>
+      <div className="container">
+        <Header />
+        <main className="main">
+          <AppRouter />
+        </main>
+      </div>
       <Footer />
     </Router>
   );

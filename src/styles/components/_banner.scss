@@ -1,24 +1,22 @@
 .banner {
-  width: $max-width;
   height: 223px;
+  border-radius: 25px;
   background-color: #b2b2b2;
-  margin: 0 2.5rem 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25px;
   &__img {
     position: relative;
     width: 100%;
     height: inherit;
+    border-radius: inherit;
     object-position: center;
     object-fit: cover;
     filter: brightness(70%);
-    border-radius: inherit;
   }
   h1 {
     position: absolute;
-    margin: 50px;
+    padding: 110px;
     color: $color-secondary;
   }
 }
@@ -26,12 +24,12 @@
 @media (max-width: $bp-sm) {
   .banner {
     height: 111px;
-    margin: 0 20px 20px;
     border-radius: 10px;
     justify-content: flex-start;
     h1 {
       font-size: 24px;
       margin: 0 2rem 0 1rem;
+      padding: 0;
       span {
         display: block;
       }

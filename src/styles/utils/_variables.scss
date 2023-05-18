@@ -1,15 +1,14 @@
-$font-family-primary: 'Montserrat', sans-serif;
-
-
-$color-primary: #FF6060;
-$color-secondary: #FFFFFF;
+/* Variables pour les styles de base */
+$font-family-primary: "Montserrat", sans-serif;
+$color-primary: #ff6060;
+$color-secondary: #ffffff;
 $bg-color-footer: #000000;
 
+/* Tailles de police */
 $fs-sm: 12px;
 $fs-m: 16px;
 $fs-lg: 20px;
 
-$max-width: 1240px;
-
+/* Paramètres de mise en page */
+$max-width: 1440px;
 $bp-sm: 768px;
-

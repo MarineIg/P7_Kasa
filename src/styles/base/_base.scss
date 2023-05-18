@@ -21,9 +21,13 @@ p {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 40px 100px 0;
 }
 
+@media (max-width: $bp-sm) {
+  .container {
+    padding: 20px;
+  }
+}
