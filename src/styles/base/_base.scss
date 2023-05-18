@@ -1,21 +1,29 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: $font-family-primary;
-    font-weight: 500;
+  font-family: $font-family-primary;
+  font-weight: 500;
 }
 
 h1 {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 h2 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
-h3, p {
-    font-size: 18px;
+h3,
+p {
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
