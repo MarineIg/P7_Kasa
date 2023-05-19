@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import bannerImg from "../assets/home_banner_min.png";
+import Cards from "../components/Cards";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
           <span>Chez vous, </span>partout et ailleurs
         </h1>
       </Banner>
-      <div>div2</div>
+      <Cards />
     </>
   );
 };
