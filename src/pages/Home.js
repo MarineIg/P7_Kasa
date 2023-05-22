@@ -9,6 +9,7 @@ const Home = () => {
       <Banner
         src={bannerImg}
         alt="Image de décoration représentant une falaise en bord de mer"
+        className="banner banner__heightSmall"
       >
         <h1>
           <span>Chez vous, </span>partout et ailleurs
