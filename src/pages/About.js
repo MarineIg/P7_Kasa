@@ -1,14 +1,22 @@
-import React from 'react';
-import Banner from '../components/Banner';
+import React from "react";
+import Banner from "../components/Banner";
 import bannerImg from "../assets/about_banner_min.png";
+import Collapse from "../components/Collapse";
+import collapseData from "../data/collapseData";
 
 const About = () => {
-    return (
-        <div>
-            <Banner src={bannerImg} className="banner"/>
-            <h1>Page a propos</h1>
-        </div>
-    );
+  return (
+    <>
+      <Banner src={bannerImg} className="banner" />
+      <div className="about">
+        {collapseData.map((collapse) => (
+          <Collapse key={collapse.id} title={collapse.title}>
+            <p>{collapse.description}</p>
+          </Collapse>
+        ))}
+      </div>
+    </>
+  );
 };
 
 export default About;

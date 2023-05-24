@@ -5,6 +5,8 @@
 body {
   font-family: $font-family-primary;
   font-weight: 500;
+  
+
 }
 
 h1 {
@@ -15,10 +17,10 @@ h2 {
   font-size: 36px;
 }
 
-h3,
-p {
-  font-size: 18px;
-}
+// h3,
+// p {
+//   font-size: 18px;
+// }
 
 .container {
   max-width: $max-width;

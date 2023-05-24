@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className="container">
         <Header />
-        <main className="main">
+        <main>
           <AppRouter />
         </main>
       </div>

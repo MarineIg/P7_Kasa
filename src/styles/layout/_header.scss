@@ -1,6 +1,5 @@
 .header {
   height: 68px;
-  margin-bottom: 63px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +20,6 @@
 
 @media (max-width: $bp-sm) {
   .header {
-    margin-bottom: 20px;
     height: 47px;
     img {
       width: 145px;

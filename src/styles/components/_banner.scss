@@ -1,4 +1,6 @@
 .banner {
+  margin-top: 44px;
+
   height: 223px;
   border-radius: 25px;
   background-color: #b2b2b2;
@@ -20,9 +22,13 @@
     color: $color-secondary;
   }
 }
+.banner__home {
+  margin-top: 63px;
+}
 
 @media (max-width: $bp-sm) {
   .banner {
+    margin-top: 16px;
     border-radius: 10px;
     justify-content: flex-start;
     h1 {
@@ -34,7 +40,7 @@
       }
     }
   }
-  .banner__heightSmall {
+  .banner__home {
     height: 111px;
   }
 }
