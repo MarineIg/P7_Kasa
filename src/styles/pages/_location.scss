@@ -1,0 +1,13 @@
+.location__collapse {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  min-height: 200px;
+  gap: 76px;
+}
+
+@media (max-width: $bp-sm) {
+  .location__collapse {
+    display: block;
+  }
+}

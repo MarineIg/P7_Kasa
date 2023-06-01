@@ -8,7 +8,6 @@ const Collapse = (props) => {
 
   const collapseStyle = {
     borderRadius: props.borderRadius,
-    width: props.width,
     fontSize: props.fontSize,
   };
 
@@ -42,14 +41,12 @@ Collapse.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   borderRadius: PropTypes.string,
-  width: PropTypes.string,
   fontSize: PropTypes.string,
   height: PropTypes.string,
 };
 
 Collapse.defaultProps = {
   borderRadius: "5px",
-  width: "100%",
   fontSize: "24px",
   height: "47px",
 };
