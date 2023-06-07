@@ -1,13 +1,40 @@
-.location__collapse {
+.housing {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 14px;
-  min-height: 200px;
-  gap: 76px;
+  color: $color-primary;
+  &__location {
+    h2 {
+      line-height: 142.6%;
+    }
+    p {
+      font-size: 18px;
+      line-height: 142.6%;
+    }
+  }
+  &__collapse {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    min-height: 200px;
+    gap: 76px;
+  }
 }
 
 @media (max-width: $bp-sm) {
-  .location__collapse {
-    display: block;
+  .housing {
+    flex-direction: column;
+    justify-content: flex-start;
+    &__location {
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    }
+    &__collapse {
+      display: block;
+    }
   }
 }
