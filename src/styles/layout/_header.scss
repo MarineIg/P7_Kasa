@@ -5,7 +5,6 @@
   justify-content: space-between;
   &__nav {
     color: $color-primary;
-    font-size: 1.5rem;
     &--active {
       border-bottom: 2px solid;
     }
@@ -13,6 +12,7 @@
       display: flex;
       li {
         margin-left: 55px;
+        font-size: 1.5rem;
       }
     }
   }
@@ -25,11 +25,11 @@
       width: 145px;
     }
     ul {
-      font-size: 0.75rem;
       text-transform: uppercase;
       li {
         margin-left: 10px;
         white-space: nowrap;
+        font-size: 0.75rem;
       }
     }
   }

@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import arrowIcon from "../assets/dropdown-arrow.svg";
-import { useState } from "react";
+import arrowIcon from "../assets/arrow.svg";
 
 const Collapse = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,18 +17,24 @@ const Collapse = (props) => {
   return (
     <div className="collapse" style={collapseStyle}>
       <button
-        className="collapse__content "
+        className="collapse__header"
         style={heightStyle}
         onClick={() => setIsOpen(!isOpen)}
       >
         <h3>{props.title}</h3>
-        <span className={isOpen ? "collapse__icon rotate" : "collapse__icon"}>
-          <img src={arrowIcon} alt="Icône de flèche" />
-        </span>
+        <img
+          src={arrowIcon}
+          alt="Icône de flèche"
+          className={
+            isOpen ? "collapse__arrowIcon rotate" : "collapse__arrowIcon"
+          }
+        />
       </button>
       <div
         className={
-          isOpen ? "collapse__text collapse__text--open" : "collapse__text"
+          isOpen
+            ? "collapse__content collapse__content--open"
+            : "collapse__content"
         }
       >
         {props.children}
