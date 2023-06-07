@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "../pages/Home";
 import About from "../pages/About";
@@ -12,7 +12,8 @@ const AppRouter = () => {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/locations/:id" element={<Location />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={<Navigate to='/404' replace />} />
+      <Route path="/404" element={<NotFound />} />
     </Routes>
   );
 };
