@@ -1,14 +1,22 @@
 .starRating {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 15px;
+  .star--filled {
+    fill: $color-primary;
+  }
+  .star--empty {
+    fill: #e3e3e3;
+  }
 }
 
 @media (max-width: $bp-sm) {
   .starRating {
     gap: 7px;
     .star {
-      width: 1.12rem;
+      width: 15px;
+      height: 15px;
     }
   }
 }
