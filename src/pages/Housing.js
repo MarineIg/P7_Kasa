@@ -1,21 +1,31 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import data from "../data/HousingData.json";
 import Slideshow from "../components/Slideshow";
 import Collapse from "../components/Collapse";
 import Tag from "../components/Tag";
 import Host from "../components/Host";
 
-const Location = () => {
+/**
+ * The Housing page.
+ * This page displays the details of a selected housing as well as a slideshow and collapse.
+ * If the housing is not found, it redirects to the 404 Not Found page.
+ * @returns {JSX.Element} The Housing page.
+ */
+
+const Housing = () => {
   const { id } = useParams();
-  const selectedHousing = data.find((location) => location.id === id);
+
+  // Find the selected housing in the data
+  const selectedHousing = data.find((housing) => housing.id === id);
+
+  // If the selected housing is not found, redirect to the 404 Not Found page
   if (!selectedHousing) {
     return <Navigate to="/404" replace />;
   }
 
-  const equipments = selectedHousing.equipments.map((i, index) => (
-    <li key={index}>{i}</li>
+  // Map the equipment of the selected housing to JSX element
+  const equipments = selectedHousing.equipments.map((equipement, index) => (
+    <li key={`${equipement}-${index}`}>{equipement}</li>
   ));
 
   return (
@@ -27,7 +37,10 @@ const Location = () => {
           <p>{selectedHousing.location}</p>
           <Tag tags={selectedHousing.tags} />
         </div>
-        <Host rating={selectedHousing.rating} host={selectedHousing.host} />
+        <Host
+          rating={Number(selectedHousing.rating)}
+          host={selectedHousing.host}
+        />
       </div>
 
       <div className="housing__collapse">
@@ -52,4 +65,4 @@ const Location = () => {
   );
 };
 
-export default Location;
+export default Housing;

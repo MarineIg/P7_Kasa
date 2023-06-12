@@ -1,8 +1,15 @@
 import { NavLink } from "react-router-dom";
-import Logo from "../components/Logo";
 import logoHeader from "../assets/logoHeader.svg";
+import Logo from "../components/Logo";
 
-function Header() {
+/**
+ * The Header layout.
+ * This layout is used on all pages of the application.
+ * It displays the header of the page with a logo and navigation link.
+ * @returns {JSX.Element} The Header layout.
+ */
+
+const Header = () => {
   return (
     <header className="header">
       <Logo src={logoHeader} />
@@ -28,6 +35,6 @@ function Header() {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

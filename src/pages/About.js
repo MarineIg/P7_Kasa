@@ -1,8 +1,13 @@
-import React from "react";
-import Banner from "../components/Banner";
 import bannerImg from "../assets/about_banner_min.png";
-import Collapse from "../components/Collapse";
 import collapseData from "../data/collapseData";
+import Banner from "../components/Banner";
+import Collapse from "../components/Collapse";
+
+/**
+ * About page of site.
+ * This page displays a banner image and list of collapse sections with information.
+ * @returns {JSX.Element} The about page.
+ */
 
 const About = () => {
   return (

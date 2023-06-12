@@ -1,6 +1,12 @@
-import React from "react";
-import Logo from "../components/Logo";
 import logoFooter from "../assets/logoFooter.svg";
+import Logo from "../components/Logo";
+
+/**
+ * The Footer Layout.
+ * This layout is used on all pages of the application.It displays the footer with a logo that scrolls to the top of
+ * the page when clicked, and copyright information with the current year.
+ * @returns {JSX.Element} The Footer layout.
+ */
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

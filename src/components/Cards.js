@@ -1,17 +1,21 @@
-import React from "react";
-import Card from "./Card";
 import data from "../data/HousingData.json";
+import Card from "./Card";
+
+/**
+ * This component displays a list of cards with information about different housing. The data for the cards is
+ * imported from a JSON file.
+ * @returns {JSX.Element} The Cards component.
+ */
 
 const Cards = () => {
   return (
     <div className="gallery">
-      {data.map((location) => (
+      {data.map((housing) => (
         <Card
-          key={location.id}
-          id={location.id}
-          image={location.cover}
-          alt="image de la location"
-          name={location.title}
+          key={housing.id}
+          id={housing.id}
+          src={housing.cover}
+          title={housing.title}
         />
       ))}
     </div>

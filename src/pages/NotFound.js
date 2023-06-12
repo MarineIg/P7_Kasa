@@ -1,5 +1,10 @@
-import React from "react";
 import { Link } from "react-router-dom";
+
+/**
+ * The NotFound page.
+ * This page displays a 404 not found page with a link to return to the home page.
+ * @returns {JSX.Element} The NotFound page.
+ */
 
 const NotFound = () => {
   return (

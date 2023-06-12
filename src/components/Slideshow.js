@@ -1,17 +1,26 @@
-import React from "react";
-import arrow from "../assets/arrow.svg";
 import { useState } from "react";
+import PropTypes from "prop-types";
+import arrow from "../assets/arrow.svg";
+
+/**
+ * This component displays a slideshow of pictures.
+ * @param {object} props - The props for the component.
+ * @param {string[]} props.pictures - The list of pictures to display in the slideshow.
+ * @returns {JSX.Element} The SlideShow component.
+ */
 
 const Slideshow = ({ pictures }) => {
+  // State for the current picture index
   const [index, setIndex] = useState(0);
 
+  // Determine if there is a previous and next picture
   const hasPrev = index > 0;
   const hasNext = index < pictures.length - 1;
 
+  // Handle clicks on the previous and next buttons
   function handlePrevClick() {
     hasPrev ? setIndex(index - 1) : setIndex(pictures.length - 1);
   }
-
   function handleNextClick() {
     hasNext ? setIndex(index + 1) : setIndex(0);
   }
@@ -47,6 +56,11 @@ const Slideshow = ({ pictures }) => {
       )}
     </div>
   );
+};
+
+// Define propTypes for the component
+Slideshow.propTypes = {
+  pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Slideshow;

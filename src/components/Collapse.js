@@ -1,47 +1,54 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import arrowIcon from "../assets/arrow.svg";
 
-const Collapse = (props) => {
+/**
+ * This component displays a collapse section with a title and content.
+ * @param {object} props - The props for the component.
+ * @param {string} props.title - The title of the collapse.
+ * @param {string} props.borderRadius - The border radius of the collapse container.
+ * @param {string} props.fontSize - The font size of the collapse.
+ * @param {string} props.height - The height of the collapse header.
+ * @param {ReactNode} props.children - The content of the collapse.
+ * @returns {JSX.Element} The Collapse component.
+ */
+
+const Collapse = ({ children, borderRadius, fontSize, height, title }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Styles for the collapse and header elements
   const collapseStyle = {
-    borderRadius: props.borderRadius,
-    fontSize: props.fontSize,
+    borderRadius: borderRadius,
+    fontSize: fontSize,
   };
-
   const heightStyle = {
-    height: props.height,
+    height: height,
   };
 
   return (
     <div className="collapse" style={collapseStyle}>
-      <button
+      <div
         className="collapse__header"
         style={heightStyle}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <h3>{props.title}</h3>
+        <h3>{title}</h3>
         <img
           src={arrowIcon}
           alt="Icône de flèche"
-          className={
-            isOpen ? "collapse__arrowIcon rotate" : "collapse__arrowIcon"
-          }
+          className={`collapse__arrowIcon ${isOpen && "rotate"}`}
         />
-      </button>
+      </div>
       <div
-        className={
-          isOpen
-            ? "collapse__content collapse__content--open"
-            : "collapse__content"
-        }
+        className={`collapse__content ${isOpen && "collapse__content--open"}`}
       >
-        {props.children}
+        {children}
       </div>
     </div>
   );
 };
+
+// Define propTypes for the component
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
@@ -50,6 +57,7 @@ Collapse.propTypes = {
   height: PropTypes.string,
 };
 
+// Define defaultProps for the component
 Collapse.defaultProps = {
   borderRadius: "5px",
   fontSize: "24px",
