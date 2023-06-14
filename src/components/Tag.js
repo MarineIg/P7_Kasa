@@ -8,7 +8,6 @@ import PropTypes from "prop-types";
  */
 
 const Tag = ({ tags }) => {
-  console.log(tags);
   return (
     <ul className="tags">
       {tags.map((tag, index) => (
