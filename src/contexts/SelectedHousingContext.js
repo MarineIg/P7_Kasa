@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 // The SelectedHousingIdContext provides access to the selected housing ID
 export const SelectedHousingIdContext = createContext();
@@ -11,7 +11,11 @@ export const SelectedHousingIdContext = createContext();
  */
 
 const SelectedHousingIdProvider = ({ children }) => {
-  const [selectedHousingId, setSelectedHousingId] = useState(null);
+  const [selectedHousingId, setSelectedHousingId] = useState(localStorage.getItem("selectedHousingId"));
+
+  useEffect(() => {
+    localStorage.setItem("selectedHousingId", selectedHousingId);
+  }, [selectedHousingId])
 
   return (
     <SelectedHousingIdContext.Provider
