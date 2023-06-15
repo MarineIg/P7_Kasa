@@ -1,4 +1,5 @@
-import data from "../data/HousingData.json";
+import { useContext } from "react";
+import { HousingContext } from "../contexts/HousingContext";
 import Card from "./Card";
 
 /**
@@ -8,6 +9,7 @@ import Card from "./Card";
  */
 
 const Cards = () => {
+  const data = useContext(HousingContext);
   return (
     <div className="gallery">
       {data.map((housing) => (

@@ -1,5 +1,7 @@
-import { useParams, Navigate } from "react-router-dom";
-import data from "../data/HousingData.json";
+import { Navigate } from "react-router-dom";
+import { useContext } from "react";
+import { SelectedHousingIdContext } from "../contexts/SelectedHousingContext";
+import { HousingContext } from "../contexts/HousingContext";
 import Slideshow from "../components/Slideshow";
 import Collapse from "../components/Collapse";
 import Tag from "../components/Tag";
@@ -13,10 +15,13 @@ import Host from "../components/Host";
  */
 
 const Housing = () => {
-  const { id } = useParams();
+  const data = useContext(HousingContext);
+  const { selectedHousingId } = useContext(SelectedHousingIdContext);
 
   // Find the selected housing in the data
-  const selectedHousing = data.find((housing) => housing.id === id);
+  const selectedHousing = data.find(
+    (housing) => housing.id === selectedHousingId
+  );
 
   // If the selected housing is not found, redirect to the 404 Not Found page
   if (!selectedHousing) {

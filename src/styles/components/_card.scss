@@ -8,6 +8,8 @@
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
+  transition: transform 0.3s ease;
+
   &::after {
     content: "";
     position: absolute;
@@ -24,6 +26,9 @@
   }
   &:hover &__img {
     opacity: 0.8;
+  }
+  &:hover {
+    transform: scale(1.1);
   }
   &__img {
     width: 100%;

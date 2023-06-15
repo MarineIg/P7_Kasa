@@ -5,9 +5,10 @@
   padding: 56px 50px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
   gap: 50px;
   @media (max-width: $bp-sm) {
+    flex-direction: column;
     margin-top: 22px;
     padding: 0;
     background-color: white;

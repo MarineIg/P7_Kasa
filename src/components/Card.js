@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { SelectedHousingIdContext } from "../contexts/SelectedHousingContext";
 
 /**
  * This component displays the pictures and the title of card. It passes the card id in the url.
@@ -13,8 +15,13 @@ import PropTypes from "prop-types";
 const Card = ({ src, title, id }) => {
   // Define the location URL
   const location = `/locations/${id}`;
+  const { setSelectedHousingId } = useContext(SelectedHousingIdContext);
+  const handleClick = () => {
+    setSelectedHousingId(id);
+  };
+
   return (
-    <Link to={location}>
+    <Link to={location} onClick={handleClick}>
       <div className="card">
         <img src={src} alt="location" className="card__img" />
         <h3 className="card__title">{title}</h3>
