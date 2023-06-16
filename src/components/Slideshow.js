@@ -41,28 +41,36 @@ const Slideshow = ({ pictures }) => {
     }, 5000);
     // Stop the interval when the component is unmounted
     return () => clearInterval(interval);
-  }, [pictures]);
+  }, [pictures, index]);
 
   return (
     <div className="slideshow">
-      <img src={currentPicture} alt="img" className="slideshow__img" />
+      {pictures.map((picture, index) => (
+        <img
+          key={index}
+          src={picture}
+          alt=""
+          className={`slideshow__img ${
+            index === pictures.indexOf(currentPicture) ? "active" : ""
+          }`}
+        />
+      ))}
       {pictures.length > 1 ? (
         <>
-          <span onClick={handlePrevClick}>
-            {" "}
+          <button onClick={handlePrevClick} aria-label="Précédent">
             <img
               src={arrow}
               alt="flèche gauche"
               className="slideshow__arrow slideshow__arrow--previous"
             />
-          </span>
-          <span onClick={handleNextClick}>
+          </button>
+          <button onClick={handleNextClick} aria-label="Suivant">
             <img
               src={arrow}
               alt="flèche droite"
               className="slideshow__arrow slideshow__arrow--next"
             />
-          </span>
+          </button>
           <span className="slideshow__counter">
             {index + 1}/{pictures.length}
           </span>

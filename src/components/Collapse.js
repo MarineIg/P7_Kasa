@@ -27,10 +27,12 @@ const Collapse = ({ children, borderRadius, fontSize, height, title }) => {
 
   return (
     <div className="collapse" style={collapseStyle}>
-      <div
+      <button
         className="collapse__header"
         style={heightStyle}
         onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        aria-controls="collapse-content"
       >
         <h3>{title}</h3>
         <img
@@ -38,8 +40,9 @@ const Collapse = ({ children, borderRadius, fontSize, height, title }) => {
           alt="Icône de flèche"
           className={`collapse__arrowIcon ${isOpen && "rotate"}`}
         />
-      </div>
+      </button>
       <div
+        id="collapse-content"
         className={`collapse__content ${isOpen && "collapse__content--open"}`}
       >
         {children}
