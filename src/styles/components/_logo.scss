@@ -1,0 +1,15 @@
+.logo-header {
+  fill: $color-primary;
+  width: 211px;
+  height: 68px;
+  @media (max-width: $bp-sm) {
+    width: 145px;
+    height: 47px;
+  }
+}
+
+.logo-footer {
+  fill: $color-secondary;
+  width: 122px;
+  height: 39px;
+}

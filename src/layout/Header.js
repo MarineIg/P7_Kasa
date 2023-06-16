@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import logoHeader from "../assets/logoHeader.svg";
 import Logo from "../components/Logo";
 
 /**
@@ -12,7 +11,7 @@ import Logo from "../components/Logo";
 const Header = () => {
   return (
     <header className="header">
-      <Logo src={logoHeader} />
+      <Logo location="header" />
       <nav className="header__nav">
         <ul>
           <li>

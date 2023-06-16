@@ -1,4 +1,3 @@
-import logoFooter from "../assets/logoFooter.svg";
 import Logo from "../components/Logo";
 
 /**
@@ -18,7 +17,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__content">
         <span onClick={handleLogoClick}>
-          <Logo src={logoFooter} />
+          <Logo location="footer" />
         </span>
         <p>&copy; {currentYear} Kasa. All rights reserved</p>
       </div>
