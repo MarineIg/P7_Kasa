@@ -1,6 +1,6 @@
 # Kasa
 
-## Français / [English](#english--francais)
+## Français / [English](#English--Français)
 ------
 ------
 # Sommaire
@@ -86,7 +86,7 @@ Projet n° 7 du parcours developpeur web de la plateforme [OpenClassrooms](https
 
 --------
 --------
-## English  / [Français](#francais--english)
+## English  / [Français](#français--english)
 --------
 --------
 # Summary
