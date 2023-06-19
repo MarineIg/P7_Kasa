@@ -1,25 +1,22 @@
 .footer {
-  background-color: black;
+  background-color: $bg-color-footer;
   height: 209px;
-  padding: 66px 0 29px 0;
+  padding: 4.12rem 0 1.81rem 0;
   &__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+    @include flex-column(space-between, center);
     height: 100%;
     p {
       color: $color-secondary;
-      font-size: 1.5rem;
+      font-size: $fs-lg;
     }
   }
 }
 @media (max-width: $bp-sm) {
   .footer {
-    padding: 62px 10px;
+    padding: 3.87rem 0.62rem;
     &__content {
       p {
-        font-size: 0.75rem;
+        font-size: $fs-sm;
       }
     }
   }

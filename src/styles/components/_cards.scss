@@ -1,17 +1,16 @@
 .gallery {
-  background-color: #f6f6f6;
-  border-radius: 25px;
-  margin: 43px 0;
-  padding: 56px 50px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;  
-  gap: 50px;
+  background-color: $color-tertiary;
+  border-radius: $border-radius-l;
+  margin: 2.7rem 0;
+  padding: 3.5rem 3.12rem;
+  @include flex-center(center);
+  flex-wrap: wrap;
+  gap: 3.12rem;
   @media (max-width: $bp-sm) {
     flex-direction: column;
-    margin-top: 22px;
+    margin-top: 1.4rem;
     padding: 0;
-    background-color: white;
-    gap: 20px;
+    background-color: $color-secondary;
+    gap: 1.25rem;
   }
 }

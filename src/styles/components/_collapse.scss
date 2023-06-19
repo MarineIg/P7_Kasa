@@ -1,67 +1,63 @@
 .collapse {
   width: 100%;
   &__header {
-    margin-top: 35px;
-    padding: 0 1.25rem;
-    border: none;
+    @include flex-center(space-between, center);
     width: 100%;
+    margin-top: 2.2rem;
+    padding: 0 1.25rem;
     border-radius: inherit;
-    background-color: $color-primary;
-    color: $color-secondary;
     font-size: inherit;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border: none;
     cursor: pointer;
+    color: $color-secondary;
+    background-color: $color-primary;
   }
   &__arrowIcon {
     transition: transform 0.2s ease-in-out;
   }
   &__content {
-    background-color: #f6f6f6;
-    color: $color-primary;
-    line-height: 142.6%;
-    border-radius: inherit;
-    font-weight: 400;
-    max-height: 0;
-    transition: max-height 0.2s ease-in-out, padding 0.2s ease-in-out;
-    overflow: hidden;
-    padding: 0 27px 0 18px;
-    margin-top: -10px;
     position: relative;
     z-index: -10;
+    max-height: 0;
+    margin-top: -0.6rem;
+    padding: 0 1.7rem 0 1.12rem;
+    border-radius: inherit;
+    line-height: $line-height;
+    font-weight: 400;
+    color: $color-primary;
+    background-color: $color-tertiary;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out, padding 0.2s ease-in-out;
     &--open {
       max-height: 1000px;
-      padding: 40px 27px 21px 18px;
+      padding: 2.5rem 1.7rem 1.3rem 1.12rem;
       transition: max-height 0.2s ease-in-out, padding 0.2s ease-out;
     }
   }
 }
-
 .rotate {
   transform: rotate(-180deg);
 }
 
 @media (max-width: $bp-sm) {
   .collapse {
-    border-radius: 5px;
+    border-radius: $border-radius-sm;
     &__header {
-      max-height: 30px;
-      margin-top: 25px;
-      padding: 0 10px 0 12px;
-      font-size: 13px;
       width: 100%;
-      border-radius: 5px;
-      height: 47px;
+      max-height: 1.87rem;
+      margin-top: 1.56rem;
+      padding: 0 0.62rem 0 0.75rem;
+      border-radius: $border-radius-sm;
+      font-size: 13px;
     }
     &__arrowIcon {
       width: 18px;
     }
     &__content {
-      padding: 0 6px 0 11px;
-      font-size: 12px;
+      padding: 0 0.37rem 0 0.68rem;
+      font-size: $fs-sm;
       &--open {
-        padding: 23px 6px 52px 11px;
+        padding: 1.43rem 0.37rem 3.25rem 0.68rem;
       }
     }
   }

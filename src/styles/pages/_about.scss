@@ -1,9 +1,5 @@
 .about {
   max-width: 1023px;
   margin: 0 auto;
-  // min-height: 603px;
-  margin-bottom: 46px;
-  @media (max-width: $bp-sm) {
-    min-height: 439px;
-  }
+  margin-bottom: 3rem;
 }

@@ -63,7 +63,7 @@ Collapse.propTypes = {
 // Define defaultProps for the component
 Collapse.defaultProps = {
   borderRadius: "5px",
-  fontSize: "24px",
+  fontSize: "1.5rem",
   height: "47px",
 };
 

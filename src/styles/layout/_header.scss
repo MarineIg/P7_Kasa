@@ -1,8 +1,6 @@
 .header {
-  height: 68px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: 4.25rem;
+  @include flex-center(space-between, center);
   &__nav {
     color: $color-primary;
     &--active {
@@ -11,8 +9,8 @@
     ul {
       display: flex;
       li {
-        margin-left: 55px;
-        font-size: 1.5rem;
+        margin-left: 3.43rem;
+        font-size: $fs-lg;
       }
     }
   }
@@ -27,9 +25,9 @@
     ul {
       text-transform: uppercase;
       li {
-        margin-left: 10px;
+        margin-left: 0.62rem;
         white-space: nowrap;
-        font-size: 0.75rem;
+        font-size: $fs-sm;
       }
     }
   }

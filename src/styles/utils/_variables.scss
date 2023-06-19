@@ -1,14 +1,30 @@
-/* Variables pour les styles de base */
+/* Font variable */
 $font-family-primary: "Montserrat", sans-serif;
+
+/* Color variables */
 $color-primary: #ff6060;
 $color-secondary: #ffffff;
+$color-tertiary: #f7f7f7;
+$color-star-empty: #e3e3e3;
 $bg-color-footer: #000000;
 
-/* Tailles de police */
-$fs-sm: 12px;
-$fs-m: 16px;
-$fs-lg: 20px;
+/* Font size variables */
+$fs-sm: 0.75rem; // 12px
+$fs-m: 1.125rem; // 18px
+$fs-lg: 1.5rem;  // 24px
+$fs-xl: 2.25rem; // 36px
+$fs-xxl: 6rem;   // 96px
+$fs-xxxl: 18rem; // 288px
 
-/* Paramètres de mise en page */
+$line-height: 142.6%;
+
+/* Border radius variables */
+$border-radius-sm: 5px;
+$border-radius-m: 10px;
+$border-radius-l: 25px;
+$border-radius-xl: 50px;
+
+
+/* Layout parameter */
 $max-width: 1440px;
 $bp-sm: 768px;

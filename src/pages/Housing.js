@@ -49,7 +49,7 @@ const Housing = () => {
         <Collapse
           title="Description"
           borderRadius="10px"
-          fontSize="18px"
+          fontSize="1.125rem"
           height="52px"
         >
           <p>{selectedHousing.description}</p>
@@ -57,7 +57,7 @@ const Housing = () => {
         <Collapse
           title="Équipements"
           borderRadius="10px"
-          fontSize="18px"
+          fontSize="1.125rem"
           height="52px"
         >
           <ul>{equipments}</ul>

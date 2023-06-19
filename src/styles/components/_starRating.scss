@@ -1,19 +1,17 @@
 .starRating {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 15px;
+  @include flex-center(flex-end, center);
+  gap: 0.93rem;
   .star--filled {
     fill: $color-primary;
   }
   .star--empty {
-    fill: #e3e3e3;
+    fill: $color-star-empty;
   }
 }
 
 @media (max-width: $bp-sm) {
   .starRating {
-    gap: 7px;
+    gap: 0.43rem;
     .star {
       width: 15px;
       height: 15px;

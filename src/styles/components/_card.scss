@@ -1,15 +1,14 @@
 .card {
   position: relative;
+  @include flex-column(flex-end);
   width: 340px;
   height: 340px;
-  border-radius: 10px;
+  border-radius: $border-radius-m;
+  font-size: $fs-m;
   background-color: $color-primary;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   overflow: hidden;
   transition: transform 0.3s ease;
-
+  animation: appear 0.9s 0.1s both;
   &::after {
     content: "";
     position: absolute;
@@ -39,10 +38,10 @@
   }
   &__title {
     position: absolute;
+    margin: 1.25rem;
+    line-height: $line-height;
     z-index: 1;
     color: $color-secondary;
-    margin: auto 20px 20px 20px;
-    line-height: 142.6%;
   }
 }
 
@@ -54,7 +53,7 @@
       transform: scale(1.02);
     }
     &__title {
-      margin-bottom: 15px;
+      margin-bottom: 0.9rem;
     }
   }
 }

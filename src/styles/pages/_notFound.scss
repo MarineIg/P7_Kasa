@@ -1,20 +1,18 @@
 .notFound {
   color: $color-primary;
-  margin: 160px auto;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
+  margin: 10rem auto;
+  @include flex-column(center, center);
   &__title {
-    font-size: 18rem;
+    font-size: $fs-xxxl;
     font-weight: 700;
-    margin-bottom: 66px;
+    margin-bottom: 4.12rem;
   }
   &__subtitle {
-    margin-bottom: 182px;
+    margin-bottom: 11.37rem;
   }
   &__link {
     text-decoration: underline;
-    font-size: 1.125rem;
+    font-size: $fs-m;
   }
 }
 @media (max-width: $bp-sm) {
@@ -23,10 +21,12 @@
       font-size: 6rem;
     }
     &__subtitle {
-      font-size: 1.1rem;
       span {
         display: block;
       }
+    }
+    &__link {
+      font-size: 14px;
     }
   }
 }

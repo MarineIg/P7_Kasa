@@ -1,36 +1,30 @@
 .housing {
-  display: flex;
-  justify-content: space-between;
+  @include flex-center(space-between);
   color: $color-primary;
   &__location {
     h2 {
-      line-height: 142.6%;
+      line-height: $line-height;
     }
     p {
-      font-size: 18px;
-      line-height: 142.6%;
+      font-size: $fs-m;
+      line-height: $line-height;
     }
   }
   &__collapse {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 14px;
-    min-height: 200px;
-    gap: 76px;
+    @include flex-center(space-between);
+    margin-bottom: 0.87rem;
+    min-height: 12.5rem;
+    gap: 4.75rem;
   }
 }
 
 @media (max-width: $bp-sm) {
   .housing {
-    flex-direction: column;
-    justify-content: flex-start;
+    @include flex-column();
     &__location {
-      h2 {
-        font-size: 18px;
-      }
       p {
         font-size: 14px;
-        margin-top: 5px;
+        margin-top: 0.31rem;
       }
     }
     &__collapse {

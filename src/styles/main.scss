@@ -1,6 +1,7 @@
 // Utils
 @import "Utils/variables";
 @import "Utils/mixins";
+@import "Utils/keyframes";
 
 // Base
 @import "base/reset";
@@ -23,7 +24,6 @@
 @import "layout/footer";
 
 // Pages
-// @import 'pages/home';
 @import "pages/about";
 @import "pages/housing";
 @import "pages/notFound";

@@ -1,11 +1,10 @@
 .slideshow {
-  height: 415px;
-  border-radius: 25px;
-  margin-top: 20px;
-  margin-bottom: 30px;
   position: relative;
-  align-items: center;
-  display: flex;
+  height: 25.9rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.87rem;
+  border-radius: $border-radius-l;
+  @include flex-center(center);
   overflow: hidden;
   &__img {
     position: absolute;
@@ -22,41 +21,42 @@
     opacity: 1;
   }
   &__arrow {
-    width: 80px;
-    height: 47px;
+    width: 5rem;
+    height: 2.93rem;
     position: absolute;
     cursor: pointer;
     &--previous {
       transform: rotate(90deg);
-      left: 23px;
+      left: 1.43rem;
     }
     &--next {
       transform: rotate(-90deg);
-      right: 23px;
+      right: 1.43rem;
     }
   }
   &__counter {
-    color: $color-secondary;
     position: absolute;
-    bottom: 25px;
     right: 50%;
-    font-size: 18px;
+    bottom: 1.56rem;
+    font-size: $fs-m;
+    color: $color-secondary;
   }
 }
 
 @media (max-width: $bp-sm) {
   .slideshow {
-    margin-top: 27px;
-    height: 255px;
+    height: 15.9rem;
+    margin-top: 1.68rem;
+    margin-bottom: 0.9rem;
     &__arrow {
-      width: 20px;
-      height: 12px;
-      top: 118px;
+      width: 1.25rem;
+      height: 0.75rem;
+      top: 7.37rem;
       &--previous {
-        left: 6px;
+        left: 0.37rem;
       }
       &--next {
-        right: 6px;
+        right: 0.37rem;
       }
     }
     &__counter {
