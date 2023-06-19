@@ -1,8 +1,9 @@
 # Kasa
 
-## Français / [English](#english--francais)
-------
-------
+## Français / [English](#english--français)
+---
+---
+
 # Sommaire
 
 - [Description](#description)
@@ -37,19 +38,19 @@ Kasa est dans le métier de la location d’appartements entre particuliers depu
   renseignées.
 - Logo cliquable et redirigeable vers la page d'accueil.
 
-
 # Technologies utilisées
-Ce projet a été initialisé avec [Create React App](https://github.com/facebook/create-react-app).  
+
+Ce projet a été initialisé avec [Create React App](https://github.com/facebook/create-react-app).
 
 <p >
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=git,figma,react,scss," />
   </a>
-</p>  
+</p>
 
 # Demo
 
-Une demo de l'application est disponible [ici](https://kasa-erbq0dzdq-marine-iguna.vercel.app/)
+Une demo de l'application est disponible [ici](https://kasa-marine-iguna.vercel.app/)
 
 # Utilisation
 
@@ -81,19 +82,20 @@ Une demo de l'application est disponible [ici](https://kasa-erbq0dzdq-marine-igu
 
 # Licence
 
-Projet n° 7 du parcours developpeur web de la plateforme [OpenClassrooms](https://openclassrooms.com/fr/).  
+Projet n° 7 du parcours developpeur web de la plateforme [OpenClassrooms](https://openclassrooms.com/fr/).
 
+---
+---
+## English / [Français](#Français--English)
+---
+---
 
---------
---------
-## English  / [Français](#francais--english)
---------
---------
 # Summary
 
 - [Description](#Description)
 - [Feature](#feature)
 - [Technologies used](#technologies-used)
+- [Demo](#demo-1)
 - [Run Locally](#run-locally)
 - [Licence](#licence-1)
 
@@ -118,24 +120,25 @@ Kasa has been in the business of renting apartments between individuals for almo
 - Collapses opening and closing on user click.
 - Smooth navigation between the different pages.
 - Redirection to the 404 page if the route does not exist, or if a
-     the value present in the URL is not part of the data
-     informed.
+  the value present in the URL is not part of the data
+  informed.
 - Clickable logo and redirected to the homepage.
 
 # Technologies used
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).  
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 <p >
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=git,figma,react,scss," />
   </a>
-</p>  
+</p>
 
 # Demo
 
-A live demo is avaible [here](https://kasa-erbq0dzdq-marine-iguna.vercel.app/)
+A live demo is avaible [here](https://kasa-marine-iguna.vercel.app/)
 
-# Run Locally 
+# Run Locally
 
 ### 1. Clone the project
 
