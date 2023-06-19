@@ -1,70 +1,168 @@
-# Getting Started with Create React App
+# Kasa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Français / [English](#english--français)
+------
+------
+# Sommaire
 
-## Available Scripts
+- [Description](#description)
+- [Fonctionnalité](#fonctionnalité)
+- [Technologies utilisées](#technologies-utilisées)
+- [Demo](#Demo)
+- [Utilisation](#Utilisation)
+- [Licence](#licence)
 
-In the project directory, you can run:
+# Description
 
-### `npm start`
+Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<table>
+  <tr>
+    <td><img src="public/Kasa_home.png" alt="Kasa"></td>
+    <td><img src="public/Kasa_housing_responsive.png" alt="Kasa responsive"></td>
+  </tr>
+</table>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Fonctionnalité
 
-### `npm test`
+- Application responsive.
+- Affichage de la liste des logements disponibles.
+- Visualisation des détails d'un logement spécifique.
+- Diaporama de photos pour chaque logement avec défilement automatique et manuel.
+- Affichage des équipements disponibles pour chaque logement.
+- Collapse s'ouvrant et se fermant au clic de l'utilisateur.
+- Navigation fluide entre les différentes pages.
+- Redirection vers la page 404 si route est inexistante, ou si une
+  valeur présente dans l’URL ne fait pas partie des données
+  renseignées.
+- Logo cliquable et redirigeable vers la page d'accueil.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Technologies utilisées
+Ce projet a été initialisé avec [Create React App](https://github.com/facebook/create-react-app).  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p >
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,figma,react,scss," />
+  </a>
+</p>  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Une demo de l'application est disponible [ici](https://github.com/facebook/create-react-app)
 
-### `npm run eject`
+# Utilisation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Cloner le projet
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  git clone https://github.com/MarineIg/P7_Kasa.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Accédez au répertoire du projet
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+  cd P7_Kasa
+```
 
-## Learn More
+3. Installer les dépendances
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Démarrer le serveur
 
-### Code Splitting
+```bash
+  npm run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Ouvrez votre navigateur et accédez à http://localhost:3000 pour voir l'application.
 
-### Analyzing the Bundle Size
+# Licence
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Projet n° 7 du parcours developpeur web de la plateforme [OpenClassrooms](https://openclassrooms.com/fr/).  
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+--------
+--------
+## English  / [Français](#français--english)
+--------
+--------
+# Summary
 
-### Advanced Configuration
+- [Description](#Description)
+- [Feature](#Feature)
+- [Technologies used](#technologies-used)
+- [Run Locally](#run-locally)
+- [Licence](#licence-1)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Description
 
-### Deployment
+Kasa has been in the business of renting apartments between individuals for almost 10 years now. With more than 500 ads posted every day, Kasa is one of the leaders in apartment rental between individuals in France.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<table>
+  <tr>
+    <td><img src="public/Kasa_home.png" alt="Kasa"></td>
+    <td><img src="public/Kasa_housing_responsive.png" alt="Kasa responsive"></td>
+  </tr>
+</table>
 
-### `npm run build` fails to minify
+# Feature
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Responsive app.
+- Display of the list of available housing.
+- Visualization of the details of a specific housing.
+- Photo slideshow for each housing with automatic and manual scrolling.
+- Display of the equipment available for each housing.
+- Collapses opening and closing on user click.
+- Smooth navigation between the different pages.
+- Redirection to the 404 page if the route does not exist, or if a
+     the value present in the URL is not part of the data
+     informed.
+- Clickable logo and redirected to the homepage.
+
+# Technologies used
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).  
+
+<p >
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,figma,react,scss," />
+  </a>
+</p>  
+
+# Demo
+
+A live demo is avaible [here](https://github.com/facebook/create-react-app)
+
+# Run Locally 
+
+### 1. Clone the project
+
+```bash
+  git clone https://github.com/MarineIg/P7_Kasa.git
+```
+
+### 2. Go to the project directory
+
+```bash
+  cd P7_Kasa
+```
+
+### 3. Install dependencies
+
+```bash
+  npm install
+```
+
+### 4. Start the server
+
+```bash
+  npm run start
+```
+
+### 5. Open your browser and go to http://localhost:3000 to see the app.
+
+# Licence
+
+Project n° 7 of the web developer course of the platform [OpenClassrooms](https://openclassrooms.com/fr/).
