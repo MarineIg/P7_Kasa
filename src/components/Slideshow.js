@@ -57,14 +57,22 @@ const Slideshow = ({ pictures }) => {
       ))}
       {pictures.length > 1 ? (
         <>
-          <button onClick={handlePrevClick} aria-label="Précédent">
+          <button
+            onClick={handlePrevClick}
+            className="slideshow__button"
+            aria-label="Précédent"
+          >
             <img
               src={arrow}
               alt="flèche gauche"
               className="slideshow__arrow slideshow__arrow--previous"
             />
           </button>
-          <button onClick={handleNextClick} aria-label="Suivant">
+          <button
+            onClick={handleNextClick}
+            className="slideshow__button"
+            aria-label="Suivant"
+          >
             <img
               src={arrow}
               alt="flèche droite"
