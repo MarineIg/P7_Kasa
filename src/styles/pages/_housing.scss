@@ -12,8 +12,8 @@
   }
   &__collapse {
     @include flex-center(space-between);
-    margin-bottom: 0.87rem;
-    min-height: 12.5rem;
+    margin-bottom: 2rem;
+    min-height: 16rem;
     gap: 4.75rem;
   }
 }
